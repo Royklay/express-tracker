@@ -139,3 +139,8 @@ form.addEventListener("submit", function(event) {
 
     displayExpenses();
 });
+
+// filter expenses 
+filterCategory.addEventListener("change", function(){
+    displayExpenses();
+});
