@@ -112,3 +112,30 @@ function displayExpenses() {
 
     totalExpenses.textContent = "KSh " + tracker.calculateTotal().toFixed(2);
 }
+
+// deleting expense 
+function deleteExpense(id) {
+    tracker.deleteExpense(id);
+    displayExpenses();
+}
+
+
+// Add expense
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const description = document.getElementById("description").value.trim();
+    const amount = Number(document.getElementById("amount").value);
+    const category = document.getElementById("category").value;
+
+    if (description.trim() === "" || amount <= 0 || category === "") {
+        alert("Please enter valid expense details.");
+        return;
+    }
+
+    tracker.addExpense(description, amount, category);
+
+    form.reset();
+
+    displayExpenses();
+});
