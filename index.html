@@ -19,6 +19,39 @@
             <h2 id="total-expenses">KSh 0.00</h2>
         </section>
 
+      <section class="form-section">
+            <h2>Add New Expense</h2>
+
+            <form id="expense-form">
+
+                <input
+                    type="text"
+                    id="description"
+                    placeholder="Expense description"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Amount (KSh)"
+                    min="0.01"
+                    required
+                >
+
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Shopping">Shopping</option>
+                    <option value="Bills">Bills</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <button type="submit">Add Expense</button>
+
+            </form>
+
     
 </body>
 </html>
