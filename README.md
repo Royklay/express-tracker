@@ -8,7 +8,7 @@ Users can add expenses by entering a description, amount, and category. They can
 
 ## Live Demo
 
-**Live Website:** [Paste your live URL here]
+**Live Website:**  https://royklay.github.io/express-tracker/
 
 ## Features
 
