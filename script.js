@@ -145,4 +145,4 @@ filterCategory.addEventListener("change", function(){
     displayExpenses();
 });
 
-displayExpenses();
+displayExpenses(); 
