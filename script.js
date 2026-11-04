@@ -30,5 +30,12 @@ deleteExpanse(...ids){
         expense => !ids.includes(expense.id)
     );
 
-    this.saveExpenses();c     
+    this.saveExpenses();
+}
+
+// filter expenses 
+filterExpenses(category) {
+    return this.expenses.filter(
+        expense => category === "All" || expense.category === category
+    );
 }
