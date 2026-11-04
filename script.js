@@ -48,3 +48,7 @@ calculateTotal() {
         .filter(expense => expense.date === today)
         .reduce((total, expense) => total + expense.amount, 0);
 }
+
+// creating tracker object   
+const tracker = new ExpenseTracker();
+
