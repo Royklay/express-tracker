@@ -52,3 +52,8 @@ calculateTotal() {
 // creating tracker object   
 const tracker = new ExpenseTracker();
 
+// Get HTML Items 
+const form = document.getElementById("expense-form");
+const expenseList = document.getElementById("expense-list");
+const totalExpenses = document.getElementById("total-expenses");
+const filterCategory = document.getElementById("filter-category");
