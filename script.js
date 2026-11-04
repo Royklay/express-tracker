@@ -22,4 +22,13 @@ addExpense(description, amount, category) {
 // Saving Expenses 
 saveExpenses() {
     localStorage.setItem("expenses", JSON.stringify(this.expenses));
+} 
+
+// Deleting an expense 
+deleteExpanse(...ids){
+    this.expenses = this.expenses.filter(
+        expense => !ids.includes(expense.id)
+    );
+
+    this.saveExpenses();c     
 }
