@@ -49,3 +49,43 @@ header p {
 .total-section h2 {
     font-size: 30px;
 }
+
+.form-section,
+.expenses-section {
+    margin-bottom: 25px;
+}
+
+.form-section h2,
+.expenses-section h2 {
+    margin-bottom: 15px;
+    color: #198754;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
+}
+
+button {
+    padding: 12px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #146c43;
+}
