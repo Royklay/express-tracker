@@ -144,3 +144,5 @@ form.addEventListener("submit", function(event) {
 filterCategory.addEventListener("change", function(){
     displayExpenses();
 });
+
+displayExpenses();
