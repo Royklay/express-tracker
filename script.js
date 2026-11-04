@@ -18,3 +18,8 @@ addExpense(description, amount, category) {
 
     this.saveExpenses();
 }
+
+// Saving Expenses 
+saveExpenses() {
+    localStorage.setItem("expenses", JSON.stringify(this.expenses));
+}
