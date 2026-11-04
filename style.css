@@ -89,3 +89,76 @@ button {
 button:hover {
     background-color: #146c43;
 }
+
+.expense-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.expense-heading select {
+    max-width: 170px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.expense-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.expense-info p {
+    color: #777;
+    font-size: 13px;
+}
+
+.expense-right {
+    text-align: right;
+}
+
+.expense-right strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    padding: 7px 12px;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background-color: #b02a37;
+}
+
+.empty-message {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    .expense-heading {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .expense-item {
+        align-items: flex-start;
+    }
+}
