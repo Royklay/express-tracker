@@ -39,3 +39,12 @@ filterExpenses(category) {
         expense => category === "All" || expense.category === category
     );
 }
+
+// calculating expenses 
+calculateTotal() {
+    const today = new Date().toLocaleDateString();
+
+    return this.expenses
+        .filter(expense => expense.date === today)
+        .reduce((total, expense) => total + expense.amount, 0);
+}
